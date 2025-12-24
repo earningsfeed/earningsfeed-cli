@@ -1,0 +1,26 @@
+[package]
+name = "earningsfeed-cli"
+version = "0.1.0"
+edition = "2021"
+description = "CLI for the EarningsFeed API - SEC filings, insider transactions, and institutional holdings"
+license = "MIT"
+repository = "https://github.com/earningsfeed/earningsfeed-cli"
+keywords = ["sec", "filings", "insider", "stocks", "cli"]
+categories = ["command-line-utilities", "finance"]
+
+[[bin]]
+name = "earningsfeed"
+path = "src/main.rs"
+
+[dependencies]
+earningsfeed = "0.1"
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+confy = "0.6"
+thiserror = "2"
+
+[profile.release]
+lto = true
+strip = true
