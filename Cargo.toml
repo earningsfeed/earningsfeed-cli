@@ -5,6 +5,7 @@ edition = "2021"
 description = "CLI for the EarningsFeed API - SEC filings, insider transactions, and institutional holdings"
 license = "MIT"
 repository = "https://github.com/earningsfeed/earningsfeed-cli"
+homepage = "https://earningsfeed.com"
 keywords = ["sec", "filings", "insider", "stocks", "cli"]
 categories = ["command-line-utilities", "finance"]
 
@@ -24,3 +25,8 @@ thiserror = "2"
 [profile.release]
 lto = true
 strip = true
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
