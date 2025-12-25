@@ -2,6 +2,8 @@
 
 Command-line interface for the [EarningsFeed API](https://earningsfeed.com) - SEC filings, insider transactions, and institutional holdings.
 
+[Get API Key](https://earningsfeed.com/api) · [API Documentation](https://earningsfeed.com/api/docs) · [Rust SDK](https://crates.io/crates/earningsfeed)
+
 ## Installation
 
 ### Homebrew (macOS/Linux)
