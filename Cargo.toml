@@ -1,7 +1,8 @@
 [package]
 name = "earningsfeed-cli"
-version = "0.1.7"
+version = "0.1.8"
 edition = "2021"
+authors = ["Earnings Feed <support@earningsfeed.com>"]
 description = "CLI for the EarningsFeed API - SEC filings, insider transactions, and institutional holdings"
 license = "MIT"
 repository = "https://github.com/earningsfeed/earningsfeed-cli"
@@ -9,6 +10,12 @@ homepage = "https://earningsfeed.com"
 documentation = "https://earningsfeed.com/api/docs"
 keywords = ["sec", "filings", "insider", "stocks", "cli"]
 categories = ["command-line-utilities", "finance"]
+
+[package.metadata.wix]
+upgrade-guid = "08729A13-94D3-48A8-A2C1-9E81C5F3D5C2"
+path-guid = "81CE00B5-8D21-488B-886D-78E7178CDC9B"
+license = false
+eula = false
 
 [[bin]]
 name = "earningsfeed"

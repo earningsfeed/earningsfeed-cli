@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>earningsfeed</id>
+    <version>$VERSION$</version>
+    <title>EarningsFeed CLI</title>
+    <authors>Earnings Feed</authors>
+    <owners>earningsfeed</owners>
+    <projectUrl>https://earningsfeed.com</projectUrl>
+    <iconUrl>https://earningsfeed.com/icon/512</iconUrl>
+    <licenseUrl>https://github.com/earningsfeed/earningsfeed-cli/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/earningsfeed/earningsfeed-cli</projectSourceUrl>
+    <docsUrl>https://earningsfeed.com/api/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/earningsfeed/earningsfeed-cli/issues</bugTrackerUrl>
+    <tags>sec filings insider-trading stocks cli finance api 13f form-4</tags>
+    <summary>CLI for the EarningsFeed API - SEC filings, insider transactions, and institutional holdings</summary>
+    <description>Command-line interface for the EarningsFeed API.
+
+**Note: Requires an API key from [earningsfeed.com/api](https://earningsfeed.com/api). Free tier available.**
+
+## Features
+- SEC filings (10-K, 10-Q, 8-K, etc.)
+- Insider transactions (Form 4)
+- Institutional holdings (13F)
+- Company lookup and search
+
+## Quick Start
+```
+earningsfeed auth login
+earningsfeed filings list --ticker AAPL
+earningsfeed insider list --direction buy --min-value 1000000
+```
+
+## Links
+- [Get API Key](https://earningsfeed.com/api)
+- [API Documentation](https://earningsfeed.com/api/docs)
+- [Rust SDK](https://crates.io/crates/earningsfeed)
+    </description>
+    <releaseNotes>https://github.com/earningsfeed/earningsfeed-cli/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -10,7 +10,7 @@ cargo-dist-version = "0.30.3"
 # CI backends to support
 ci = "github"
 # The installers to generate for each app
-installers = ["homebrew"]
+installers = ["shell", "homebrew", "msi"]
 # Homebrew tap repository
 tap = "earningsfeed/homebrew-tap"
 # Publish jobs to run
