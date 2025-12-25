@@ -1,6 +1,6 @@
 [package]
 name = "earningsfeed-cli"
-version = "0.1.2"
+version = "0.1.3"
 edition = "2021"
 description = "CLI for the EarningsFeed API - SEC filings, insider transactions, and institutional holdings"
 license = "MIT"

@@ -290,7 +290,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Install Rust
-        uses: dtolnay/rust-action@stable
+        uses: dtolnay/rust-toolchain@stable
       - name: Get OIDC token for crates.io
         uses: actions/github-script@v7
         id: oidc
